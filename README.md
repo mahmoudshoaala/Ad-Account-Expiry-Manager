@@ -51,7 +51,7 @@ The main window shows all registered exception accounts with colour-coded status
 | 🟡 Yellow | Expiring within 7 days — action approaching |
 | ⬜ White | Active — more than 7 days remaining |
 
-DC status indicators in the header show live connectivity to both `oc-dcsrv-01` and `oc-dcsrv-02`.
+DC status indicators in the header show live connectivity to both `Contoso-dcsrv-01` and `Contoso-dcsrv-02`.
 
 ---
 
