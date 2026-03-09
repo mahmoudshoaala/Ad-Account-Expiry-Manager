@@ -1,0 +1,17 @@
+# Sensitive data - never commit these
+ExceptionAccounts.xml
+*.xml
+
+# Auto-generated logs and reports
+Logs/
+Reports/
+
+# PowerShell temp files
+*.ps1xml
+*.psd1.bak
+
+# Editor files
+.vscode/
+*.code-workspace
+Thumbs.db
+desktop.ini

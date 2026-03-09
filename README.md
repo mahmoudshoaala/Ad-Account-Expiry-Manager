@@ -1,6 +1,3 @@
-# Ad-Account-Expiry-Manager
-PowerShell GUI tool for managing business-exception AD accounts — automates graceful expiry, OU migration, and HTML email reporting for terminated employees retaining O365 access as consultants.
-
 # AD Account Expiry Manager
 ### Business Exception Handler for Active Directory
 
@@ -136,7 +133,7 @@ Open `AD-AccountExpiryManager.ps1` and update the `$Global:Config` block at the 
 $Global:Config = @{
     PrimaryDC        = "your-dc-01"
     SecondaryDC      = "your-dc-02"
-    DisabledOU       = "OU=Disabled Users,DC=contoso,DC=com"
+    DisabledOU       = "OU=Disabled Accounts,DC=contoso,DC=com"
     SMTPServer       = "mail.contoso.com"
     SMTPPort         = 25
     SMTPUseSSL       = $false
@@ -244,11 +241,11 @@ ad-account-expiry-manager/
 
 ```
 [2026-03-08 07:00:00] [INFO ] === Scheduled processing started ===
-[2026-03-08 07:00:01] [INFO ] Using domain controller: Contoso-dcsrv-01
+[2026-03-08 07:00:01] [INFO ] Using domain controller: oc-dcsrv-01
 [2026-03-08 07:00:02] [INFO ] Processing: m.hassan (expiry: 2026-03-08)
 [2026-03-08 07:00:05] [INFO ] Expiration set for m.hassan -> 2026-03-08
 [2026-03-08 07:00:06] [INFO ] Account disabled: m.hassan
-[2026-03-08 07:00:08] [INFO ] Moved m.hassan to OU=Disabled Users,DC=contoso,DC=com
+[2026-03-08 07:00:08] [INFO ] Moved m.hassan to OU=Disabled Accounts,DC=contoso,DC=com
 [2026-03-08 07:00:09] [INFO ] Account list saved. Total entries: 6
 [2026-03-08 07:00:11] [INFO ] HTML report emailed to: it-admin@contoso.com
 [2026-03-08 07:00:11] [INFO ] === Scheduled processing completed. Results: 1 ===
