@@ -40,7 +40,7 @@ Without tooling, these exceptions accumulate silently — creating **orphaned pr
 
 ### GUI Interface — Exception Account Queue
 
-![GUI Interface](screenshots/gui-main.png)
+![GUI Interface](Roo/GUI Interface.jpg)
 
 The main window shows all registered exception accounts with colour-coded status rows:
 
